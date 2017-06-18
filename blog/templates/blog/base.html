@@ -1,0 +1,33 @@
+{% extends 'blog/header.html' %}
+{% load staticfiles %}
+
+{% block content %}
+  <div class="maincontent">
+    <div class="text">
+      <h2>What's Magen?</h2>
+      <p>
+        Magen, or Magnetic field generator, is a programming project that tries to simulates magnets, their power and movements.
+      </p>
+      <p>
+        Actually it's (in public version) possible to simulate magnets in a 2D space. Every magnet is turned with its poles perpendiculary
+        to the plane, so the magnetic field is radiated in cycles.
+      </p>
+      <p>
+        Impelented features: magnets(power, weight, polarity), GUI(strips density, strips color), render(window, file)
+      </p>
+      <p>
+        Render speed: HD quality is rendered at speed 3 frames per second. Once it will be completly rewrited to run on a graphic card.
+      </p>
+      <p>
+        If you want to enjoy my project as well as me, you can download it in products section.
+      </p>
+      <p>
+        This site is actually under construction, please be polite to it.
+      </p>
+    </div>
+    <div class="image">
+      <img src="{% static '/images/preview.png' %}" alt="My image"/ width="600px" height="600px">
+
+    </div>
+  </div>
+{% endblock %}

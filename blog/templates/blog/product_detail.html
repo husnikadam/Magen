@@ -1,0 +1,29 @@
+{% extends 'blog/header.html' %}
+
+{% block content %}
+<div class="product" id=detail>
+  <div class="title">
+    {{ product.title }}
+  </div>
+  <div class="description">
+    <div class="text">
+      {{ product.text }}
+      <p>
+        This content is not avaiable here yet! Please contact me here for getting it: husnikadam@email.cz
+      </p>
+    </div>
+    <div class="price">
+      <div class="priceitself">
+        {{ product.price }}
+      </div>
+      <div class="buy">
+        <a href="">get it</a>
+      </div>
+      <div class="buy">
+        <a href="./..">back</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% load static %}
+<html>
+      <head>
+         <title>Magen</title>
+         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+      </head>
+      <body>
+        <div class="nonfooter">
+          <div class="page-header">
+              <h1><a href="/">Magnetic field generator project</a></h1>
+          </div>
+          <div class="bar">
+            <div class="baritem">
+              <a href="/">Homepage</a>
+            </div>
+            <div class="baritem">
+              <a href="/products">Products</a>
+            </div>
+            <div class="baritem">
+              <a href="/about">About</a>
+            </div>
+            <div class="baritem" id="lastbaritem">
+            </div>
+          </div>
+          {% block content %}
+          {% endblock %}
+        </div>
+        <div class="footer">
+          <p>
+            Administrated by Adam Husnik.
+          </p>
+        </div>
+      </body>
+
+</html>
